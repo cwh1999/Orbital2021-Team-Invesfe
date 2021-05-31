@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Invesfe</title>
+        <link rel="stylesheet" href="budgetplanner.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="Invesfe_logo.png"></a>
+                <div class="navbar">
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT US</a></li>
+                        <div class="dropdown">
+                            <button class="dropbtn">TOOLS</button>
+                            <div class="dropdown-content">
+                                <a href="budgetplanner.html">Budget Planner</a>
+                                <a href="intrinsic.html">Valuation Model</a>
+                                <a href="interest.html">Compound Growth Calculator</a>
+                                <a href="portfolio.html">Portfolio Allocator</a>
+                            </div>
+                          </div>
+                        <li><a href="login.html">LOG IN/REGISTER</a></li>
+                    </ul>
+                </div>
+            </nav>  
+              
+        </section>
+        <h2 id="text">BUDGET PLANNER</h2>
+        <div id="piechart">
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript">
+        // Load google charts
+        google.charts.load('current', {'packages':['corechart']});
+        google.charts.setOnLoadCallback(drawChart);
+        // Draw the chart and set the chart values
+        function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+        ['Task', 'Budget Allocation'],
+        ['Needs', 5],
+        ['Financial Goals', 2],
+        ['Wants', 3],
+        ]);
+        // Optional; add a title and set the width and height of the chart
+        var options = {'title':'Budget Allocation', 'width':700, 'height':400};
+        // Display the chart inside the <div> element with id="piechart"
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+        chart.draw(data, options);
+        }
+        </script>
+        </div>
+        <section class= "description">
+            <h2> 50-30-20 Budget Rule </h2>
+            <p>Popularised by Elizabeth Warren, this rule acts as a rule of thumb
+             in helping you to allocate your budget in three categories: Needs, Wants and Financial goals. </p>
+            <h3> Needs </h3>           
+             <u1> 
+             <li>Rent</li>
+             <li>Groceries</li>
+             </u1>
+             <h3> Wants </h3> 
+             <u1> 
+             <li>Entertainment Services </li>
+             <li>Hobbies </li>
+             </u1>
+             <h3> Financial Goals </h3>
+             <u1 > 
+             <li>Savings </li>
+             <li>Investment </li>
+             </u1>
+             <p> As with all budgetting rules out there, this is only a rough guide and
+             you can make your own adjustments to better suit your needs! </p>
+        </section>
+    </body>
+</html>
