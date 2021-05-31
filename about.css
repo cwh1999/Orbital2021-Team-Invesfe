@@ -8,7 +8,7 @@
     height: 25vh;
     width: 100vw;
     background-image: linear-gradient(rgba(221, 224, 236, 0.4),
-    rgba(221, 224, 236, 0.4)), url("./images/header.jpg");
+    rgba(221, 224, 236, 0.4)), url("../images/header.jpg");
     background-position: 100%;
     background-size: cover;
     background-repeat: no-repeat;
